@@ -1,0 +1,7 @@
+<map id="brick_game::SnakeModel" name="brick_game::SnakeModel">
+<area shape="rect" id="Node000001" title="Class of the Snake game." alt="" coords="81,93,266,119"/>
+<area shape="rect" id="Node000002" href="$classbrick__game_1_1Model.html" title=" " alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,38,162,91,158,95,100,42"/>
+<area shape="rect" id="Node000003" href="$structbrick__game_1_1GameInfo__t.html" title=" " alt="" coords="177,5,359,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,42,188,95,185,91,243,38"/>
+</map>

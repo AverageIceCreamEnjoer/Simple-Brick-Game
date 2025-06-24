@@ -1,0 +1,9 @@
+<map id="brick_game::TetrisModel" name="brick_game::TetrisModel">
+<area shape="rect" id="Node000001" title="Class of the Tetris game." alt="" coords="177,123,359,148"/>
+<area shape="rect" id="Node000002" href="$classbrick__game_1_1Model.html" title=" " alt="" coords="5,13,152,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,42,249,120,247,125,109,47"/>
+<area shape="rect" id="Node000003" href="$structbrick__game_1_1GameInfo__t.html" title=" " alt="" coords="177,13,359,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,52,271,122,265,122,265,52"/>
+<area shape="rect" id="Node000004" href="$classbrick__game_1_1TetrisModel_1_1Figure.html" title=" " alt="" coords="384,5,565,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="428,54,291,125,289,120,425,49"/>
+</map>

@@ -1,0 +1,215 @@
+\doxysection{brick\+\_\+game\+::Tetris\+Model Class Reference}
+\hypertarget{classbrick__game_1_1TetrisModel}{}\label{classbrick__game_1_1TetrisModel}\index{brick\_game::TetrisModel@{brick\_game::TetrisModel}}
+
+
+Class of the Tetris game.  
+
+
+
+
+{\ttfamily \#include $<$tetris\+Model.\+h$>$}
+
+
+
+Inheritance diagram for brick\+\_\+game\+::Tetris\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classbrick__game_1_1TetrisModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for brick\+\_\+game\+::Tetris\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbrick__game_1_1TetrisModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_ac4d9f50a443cafe71813c2919931124b}\label{classbrick__game_1_1TetrisModel_ac4d9f50a443cafe71813c2919931124b} 
+int {\bfseries read\+High\+Score} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_ac4fdab80cb1967f95cd059e5c3f5b9cb}\label{classbrick__game_1_1TetrisModel_ac4fdab80cb1967f95cd059e5c3f5b9cb} 
+void {\bfseries start} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a94fb4c4176934ca03f0b620f8d7b92be}\label{classbrick__game_1_1TetrisModel_a94fb4c4176934ca03f0b620f8d7b92be} 
+void {\bfseries spawn} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a34bbb1e9f2d2b1f8f8830b22abaf08b0}\label{classbrick__game_1_1TetrisModel_a34bbb1e9f2d2b1f8f8830b22abaf08b0} 
+void {\bfseries move} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a19f75398af92ebbd2d3f3383a11454e0}\label{classbrick__game_1_1TetrisModel_a19f75398af92ebbd2d3f3383a11454e0} 
+void {\bfseries attaching} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a01f34b5311509be9e459f884373c2389}\label{classbrick__game_1_1TetrisModel_a01f34b5311509be9e459f884373c2389} 
+void {\bfseries pause} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a8d724b3ca7fc3289bb024a5c330d815c}\label{classbrick__game_1_1TetrisModel_a8d724b3ca7fc3289bb024a5c330d815c} 
+void {\bfseries game\+Over} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a85e3e60333be759dfed77f5e94364cff}\label{classbrick__game_1_1TetrisModel_a85e3e60333be759dfed77f5e94364cff} 
+void {\bfseries move\+Figure} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a95f4b68478e4388050a4cb9bcbf776c2}\label{classbrick__game_1_1TetrisModel_a95f4b68478e4388050a4cb9bcbf776c2} 
+bool {\bfseries can\+Move\+Fig} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a62e4c1104053ce29343c4a915d2d7b53}\label{classbrick__game_1_1TetrisModel_a62e4c1104053ce29343c4a915d2d7b53} 
+bool {\bfseries is\+Collided} (\mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}} figure)
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_ae6a2a0d49341e756ea2c63a720ade780}\label{classbrick__game_1_1TetrisModel_ae6a2a0d49341e756ea2c63a720ade780} 
+bool {\bfseries is\+Attached} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a042229dae4fb514ac103868b72529a8a}\label{classbrick__game_1_1TetrisModel_a042229dae4fb514ac103868b72529a8a} 
+void {\bfseries shift} (\mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}} \&figure)
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_ab7e6a1630be43c644f081ddad7fac21c}\label{classbrick__game_1_1TetrisModel_ab7e6a1630be43c644f081ddad7fac21c} 
+void {\bfseries connect\+To\+Field} ()
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a5d8f671731c9159f0f10437e1c2f7879}\label{classbrick__game_1_1TetrisModel_a5d8f671731c9159f0f10437e1c2f7879} 
+int {\bfseries delete\+Rows} ()
+\item 
+void \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a38026bacdc5d3f54251bf7fc8d58cb99}{sigact}} () override
+\begin{DoxyCompactList}\small\item\em Function that should be called every tick of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a7b7464d671fa628d0b9d896a2def452b}{user\+Input}} (int act) override
+\begin{DoxyCompactList}\small\item\em Accepts the player\textquotesingle{}s action. \end{DoxyCompactList}\item 
+Game\+State\+\_\+t \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a5dc4d9d64cf976fa78780e60a31c29a7}{get\+State}} () override
+\begin{DoxyCompactList}\small\item\em Returns the game state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a57095cd846cf02b10fef53ab16eaa194}{ticked}} () override
+\begin{DoxyCompactList}\small\item\em Returns whether the game\textquotesingle{}s speed-\/dependent tick has passed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{Game\+Info\+\_\+t}} \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a7c975f647f4845ddbd8714cd654d9ebe}{update\+Current\+State}} () override
+\begin{DoxyCompactList}\small\item\em Updates and returns information needed to render the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbrick__game_1_1TetrisModel_ad623dd9142f79f3859d47455e09c2fc6}{is\+Win}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a8a2f2f53c6046d2b5c23830938f70339}\label{classbrick__game_1_1TetrisModel_a8a2f2f53c6046d2b5c23830938f70339} 
+\mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{Game\+Info\+\_\+t}} {\bfseries \+\_\+info}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_aa0cf992ce5ccacba1c136c3c15be24ec}\label{classbrick__game_1_1TetrisModel_aa0cf992ce5ccacba1c136c3c15be24ec} 
+Game\+State\+\_\+t {\bfseries \+\_\+state}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a803bc46ef198cc127cc0cd85d9552127}\label{classbrick__game_1_1TetrisModel_a803bc46ef198cc127cc0cd85d9552127} 
+User\+Action\+\_\+t {\bfseries \+\_\+act}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a02e48c826aa9aeeacd5b86f8ca13ba69}\label{classbrick__game_1_1TetrisModel_a02e48c826aa9aeeacd5b86f8ca13ba69} 
+\mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}} {\bfseries \+\_\+current}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_ae6bf860775d2cbfe32df837f7b1a4557}\label{classbrick__game_1_1TetrisModel_ae6bf860775d2cbfe32df837f7b1a4557} 
+\mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}} {\bfseries \+\_\+next}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a62150b1039c6b1e6dc9d4da8605ae96e}\label{classbrick__game_1_1TetrisModel_a62150b1039c6b1e6dc9d4da8605ae96e} 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries \+\_\+field}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_afadb699d865928af0a521ae1b478bc42}\label{classbrick__game_1_1TetrisModel_afadb699d865928af0a521ae1b478bc42} 
+std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point {\bfseries \+\_\+timer}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a2330fcce4b0b9aa5ddea818f778bd720}\label{classbrick__game_1_1TetrisModel_a2330fcce4b0b9aa5ddea818f778bd720} 
+std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point {\bfseries \+\_\+timer\+\_\+down}
+\item 
+\Hypertarget{classbrick__game_1_1TetrisModel_a605211a7f7bc45ba4ecb1e62f4ea2d1c}\label{classbrick__game_1_1TetrisModel_a605211a7f7bc45ba4ecb1e62f4ea2d1c} 
+bool {\bfseries \+\_\+won}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the Tetris game. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbrick__game_1_1TetrisModel_a5dc4d9d64cf976fa78780e60a31c29a7}\label{classbrick__game_1_1TetrisModel_a5dc4d9d64cf976fa78780e60a31c29a7} 
+\index{brick\_game::TetrisModel@{brick\_game::TetrisModel}!getState@{getState}}
+\index{getState@{getState}!brick\_game::TetrisModel@{brick\_game::TetrisModel}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily Game\+State\+\_\+t brick\+\_\+game\+::\+Tetris\+Model\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the game state. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_af70dd37c4527e46f9933a9bafe443a79}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1TetrisModel_ad623dd9142f79f3859d47455e09c2fc6}\label{classbrick__game_1_1TetrisModel_ad623dd9142f79f3859d47455e09c2fc6} 
+\index{brick\_game::TetrisModel@{brick\_game::TetrisModel}!isWin@{isWin}}
+\index{isWin@{isWin}!brick\_game::TetrisModel@{brick\_game::TetrisModel}}
+\doxysubsubsection{\texorpdfstring{isWin()}{isWin()}}
+{\footnotesize\ttfamily bool brick\+\_\+game\+::\+Tetris\+Model\+::is\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1TetrisModel_a38026bacdc5d3f54251bf7fc8d58cb99}\label{classbrick__game_1_1TetrisModel_a38026bacdc5d3f54251bf7fc8d58cb99} 
+\index{brick\_game::TetrisModel@{brick\_game::TetrisModel}!sigact@{sigact}}
+\index{sigact@{sigact}!brick\_game::TetrisModel@{brick\_game::TetrisModel}}
+\doxysubsubsection{\texorpdfstring{sigact()}{sigact()}}
+{\footnotesize\ttfamily void brick\+\_\+game\+::\+Tetris\+Model\+::sigact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Function that should be called every tick of the game. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_ac7fc73f97a2c3980ed065e43fd81d2fc}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1TetrisModel_a57095cd846cf02b10fef53ab16eaa194}\label{classbrick__game_1_1TetrisModel_a57095cd846cf02b10fef53ab16eaa194} 
+\index{brick\_game::TetrisModel@{brick\_game::TetrisModel}!ticked@{ticked}}
+\index{ticked@{ticked}!brick\_game::TetrisModel@{brick\_game::TetrisModel}}
+\doxysubsubsection{\texorpdfstring{ticked()}{ticked()}}
+{\footnotesize\ttfamily bool brick\+\_\+game\+::\+Tetris\+Model\+::ticked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns whether the game\textquotesingle{}s speed-\/dependent tick has passed. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_adf65c276ce264cb267266a6be9e80469}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1TetrisModel_a7c975f647f4845ddbd8714cd654d9ebe}\label{classbrick__game_1_1TetrisModel_a7c975f647f4845ddbd8714cd654d9ebe} 
+\index{brick\_game::TetrisModel@{brick\_game::TetrisModel}!updateCurrentState@{updateCurrentState}}
+\index{updateCurrentState@{updateCurrentState}!brick\_game::TetrisModel@{brick\_game::TetrisModel}}
+\doxysubsubsection{\texorpdfstring{updateCurrentState()}{updateCurrentState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{Game\+Info\+\_\+t}} brick\+\_\+game\+::\+Tetris\+Model\+::update\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates and returns information needed to render the game. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_ac0f5c4f6d310ee86433aa382ec027900}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1TetrisModel_a7b7464d671fa628d0b9d896a2def452b}\label{classbrick__game_1_1TetrisModel_a7b7464d671fa628d0b9d896a2def452b} 
+\index{brick\_game::TetrisModel@{brick\_game::TetrisModel}!userInput@{userInput}}
+\index{userInput@{userInput}!brick\_game::TetrisModel@{brick\_game::TetrisModel}}
+\doxysubsubsection{\texorpdfstring{userInput()}{userInput()}}
+{\footnotesize\ttfamily void brick\+\_\+game\+::\+Tetris\+Model\+::user\+Input (\begin{DoxyParamCaption}\item[{int}]{act }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepts the player\textquotesingle{}s action. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_ac52a7f6daac8ec3ec91075d230ea503e}{brick\+\_\+game\+::\+Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+brick\+\_\+game/tetris/tetris\+Model.\+h\item 
+brick\+\_\+game/tetris/tetris\+Model.\+cc\end{DoxyCompactItemize}

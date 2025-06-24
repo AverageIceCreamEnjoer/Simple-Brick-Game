@@ -1,0 +1,100 @@
+\doxysection{tetris\+Model.\+h}
+\hypertarget{tetrisModel_8h_source}{}\label{tetrisModel_8h_source}\index{brick\_game/tetris/tetrisModel.h@{brick\_game/tetris/tetrisModel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_TETRIS\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_TETRIS\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}../api/api.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ TETRIS\_HIGH\_SCORE\_FILE\ "{}tetris\_high\_score.txt"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ ACTION\_BUTTONS\ 8}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ HEIGHT\ 20}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ WIDTH\ 10}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ PLAYER\_SPEED\ 100}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ DOWN\_SPEED\ 500}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }brick\_game\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classbrick__game_1_1TetrisModel}{TetrisModel}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classbrick__game_1_1Model}{Model}}\ \{}
+\DoxyCodeLine{00021\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ F1();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ F2();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ F3();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ F4();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ F5();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ F6();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ F7();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}(\textcolor{keywordtype}{bool}\ random\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}\&\ other);}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{\string~Figure}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}\&\ other);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ height,\ width;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ y;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}**\ field;}
+\DoxyCodeLine{00044\ \ \ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{GameInfo\_t}}\ \_info;}
+\DoxyCodeLine{00047\ \ \ GameState\_t\ \_state;}
+\DoxyCodeLine{00048\ \ \ UserAction\_t\ \_act;}
+\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}\ \_current,\ \_next;}
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{int}**\ \_field;}
+\DoxyCodeLine{00051\ \ \ std::chrono::steady\_clock::time\_point\ \_timer;}
+\DoxyCodeLine{00052\ \ \ std::chrono::steady\_clock::time\_point\ \_timer\_down;}
+\DoxyCodeLine{00053\ \ \ \textcolor{keywordtype}{bool}\ \_won;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{int}\ readHighScore();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{void}\ start();}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{void}\ spawn();}
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{void}\ move();}
+\DoxyCodeLine{00060\ \ \ \textcolor{keywordtype}{void}\ attaching();}
+\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{void}\ pause();}
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{void}\ gameOver();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{void}\ moveFigure();}
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{bool}\ canMoveFig();}
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{bool}\ isCollided(\mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}\ figure);}
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordtype}{bool}\ isAttached();}
+\DoxyCodeLine{00068\ \ \ \textcolor{keywordtype}{void}\ shift(\mbox{\hyperlink{classbrick__game_1_1TetrisModel_1_1Figure}{Figure}}\&\ figure);}
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{void}\ connectToField();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{int}\ deleteRows();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00074\ \ \ \mbox{\hyperlink{classbrick__game_1_1TetrisModel}{TetrisModel}}();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \mbox{\hyperlink{classbrick__game_1_1TetrisModel}{\string~TetrisModel}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a38026bacdc5d3f54251bf7fc8d58cb99}{sigact}}()}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \textcolor{keyword}{override};\ \ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a7b7464d671fa628d0b9d896a2def452b}{userInput}}(\textcolor{keywordtype}{int}\ act)\ \textcolor{keyword}{override};\ \ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ GameState\_t\ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a5dc4d9d64cf976fa78780e60a31c29a7}{getState}}()\ \textcolor{keyword}{override};\ \ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a57095cd846cf02b10fef53ab16eaa194}{ticked}}()}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \textcolor{keyword}{override};\ \ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{GameInfo\_t}}\ \mbox{\hyperlink{classbrick__game_1_1TetrisModel_a7c975f647f4845ddbd8714cd654d9ebe}{updateCurrentState}}()}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \textcolor{keyword}{override};\ \ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \textcolor{keywordtype}{bool}\ isWin()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ \}\ \ \textcolor{comment}{//\ namespace\ brick\_game}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

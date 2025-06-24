@@ -1,0 +1,216 @@
+\doxysection{brick\+\_\+game\+::Snake\+Model Class Reference}
+\hypertarget{classbrick__game_1_1SnakeModel}{}\label{classbrick__game_1_1SnakeModel}\index{brick\_game::SnakeModel@{brick\_game::SnakeModel}}
+
+
+Class of the Snake game.  
+
+
+
+
+{\ttfamily \#include $<$snake.\+h$>$}
+
+
+
+Inheritance diagram for brick\+\_\+game\+::Snake\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classbrick__game_1_1SnakeModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for brick\+\_\+game\+::Snake\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classbrick__game_1_1SnakeModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a43b4acdf49692f8cb2d9c7f76e483979}\label{classbrick__game_1_1SnakeModel_a43b4acdf49692f8cb2d9c7f76e483979} 
+int {\bfseries get\+Rand\+Num} (int d)
+\item 
+void \mbox{\hyperlink{classbrick__game_1_1SnakeModel_ab3b7170a706c6814f66953511bf0b859}{sigact}} () override
+\begin{DoxyCompactList}\small\item\em Function that should be called every tick of the game. \end{DoxyCompactList}\item 
+Game\+State\+\_\+t \mbox{\hyperlink{classbrick__game_1_1SnakeModel_ae0a68f8c7df43d0a93a699591a7cd7d4}{get\+State}} () override
+\begin{DoxyCompactList}\small\item\em Returns the game state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbrick__game_1_1SnakeModel_aa90a757e7d8ae96ae29c0606bc90bb57}{ticked}} () override
+\begin{DoxyCompactList}\small\item\em Returns whether the game\textquotesingle{}s speed-\/dependent tick has passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbrick__game_1_1SnakeModel_ae1dcdd7e3165d389e5bea3d1e6b184bc}{user\+Input}} (int act) override
+\begin{DoxyCompactList}\small\item\em Accepts the player\textquotesingle{}s action. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{Game\+Info\+\_\+t}} \mbox{\hyperlink{classbrick__game_1_1SnakeModel_a3c318fa65bcd3a54324a473d92e59f90}{update\+Current\+State}} () override
+\begin{DoxyCompactList}\small\item\em Updates and returns information needed to render the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbrick__game_1_1SnakeModel_a2a1246ff2bc57297a115c744a80f6c52}{is\+Win}} () override
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_afd1cb225e91b093d69f8c70a5849d490}\label{classbrick__game_1_1SnakeModel_afd1cb225e91b093d69f8c70a5849d490} 
+int {\bfseries read\+High\+Score} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_aabe434b7d42ac9bbfb3b14c9488024a8}\label{classbrick__game_1_1SnakeModel_aabe434b7d42ac9bbfb3b14c9488024a8} 
+void {\bfseries write\+High\+Score} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a1614468739d323149696fa9e1bad421b}\label{classbrick__game_1_1SnakeModel_a1614468739d323149696fa9e1bad421b} 
+void {\bfseries shift} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a35ef3d5817ca604acdd17c069985573e}\label{classbrick__game_1_1SnakeModel_a35ef3d5817ca604acdd17c069985573e} 
+void {\bfseries boost} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a710c660fad78b1ebe6b794e8ce3ef5b1}\label{classbrick__game_1_1SnakeModel_a710c660fad78b1ebe6b794e8ce3ef5b1} 
+std\+::pair$<$ int, int $>$ {\bfseries get\+Random} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_ad8bc3e5ff3f033a8eedb9d528181e494}\label{classbrick__game_1_1SnakeModel_ad8bc3e5ff3f033a8eedb9d528181e494} 
+void {\bfseries start\+Game} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a7f2c4fecddf8a43c6e877ec7233eef2f}\label{classbrick__game_1_1SnakeModel_a7f2c4fecddf8a43c6e877ec7233eef2f} 
+void {\bfseries spawn\+Apple} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_ae36289ba50c7cdce04ecd0673e965a03}\label{classbrick__game_1_1SnakeModel_ae36289ba50c7cdce04ecd0673e965a03} 
+void {\bfseries game\+Over} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_aafc9b875bab42c02855745732b4c4e15}\label{classbrick__game_1_1SnakeModel_aafc9b875bab42c02855745732b4c4e15} 
+void {\bfseries move} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_abdfeddad616fec73231216cea68e51fc}\label{classbrick__game_1_1SnakeModel_abdfeddad616fec73231216cea68e51fc} 
+void {\bfseries attaching} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_ad020a4739bb87b2496374314ede2a622}\label{classbrick__game_1_1SnakeModel_ad020a4739bb87b2496374314ede2a622} 
+void {\bfseries pause\+Game} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a97737a2e6296cddd40987d4b2b52d86e}\label{classbrick__game_1_1SnakeModel_a97737a2e6296cddd40987d4b2b52d86e} 
+bool {\bfseries is\+Collided} ()
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a590562778bcfad731c5eb2d17fb25cf0}\label{classbrick__game_1_1SnakeModel_a590562778bcfad731c5eb2d17fb25cf0} 
+bool {\bfseries opposites} (Direction\+\_\+t x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a97b29575ce571f24dc3176e0f3bdc332}\label{classbrick__game_1_1SnakeModel_a97b29575ce571f24dc3176e0f3bdc332} 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries \+\_\+field}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_ad9a8f4a1d6725e6cb77e7afb392a582b}\label{classbrick__game_1_1SnakeModel_ad9a8f4a1d6725e6cb77e7afb392a582b} 
+std\+::set$<$ std\+::pair$<$ int, int $>$ $>$ {\bfseries \+\_\+pixels}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a43c807f00949ecf970bc3b41e7dea829}\label{classbrick__game_1_1SnakeModel_a43c807f00949ecf970bc3b41e7dea829} 
+Game\+State\+\_\+t {\bfseries \+\_\+state}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a088ccd39f106881ccaaece15f0685eae}\label{classbrick__game_1_1SnakeModel_a088ccd39f106881ccaaece15f0685eae} 
+\mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{Game\+Info\+\_\+t}} {\bfseries \+\_\+info}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_af61ecc293d52942937834798cc53b8b7}\label{classbrick__game_1_1SnakeModel_af61ecc293d52942937834798cc53b8b7} 
+User\+Action\+\_\+t {\bfseries \+\_\+act}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_ab04e1f1ad48f7df07808544148f487f6}\label{classbrick__game_1_1SnakeModel_ab04e1f1ad48f7df07808544148f487f6} 
+std\+::deque$<$ std\+::pair$<$ int, int $>$ $>$ {\bfseries \+\_\+snake}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a26ad6fa1fc8c8dcca9c0294855d48d93}\label{classbrick__game_1_1SnakeModel_a26ad6fa1fc8c8dcca9c0294855d48d93} 
+std\+::pair$<$ int, int $>$ {\bfseries \+\_\+apple}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a15c6f2df9dae34006db64aaad4c8d665}\label{classbrick__game_1_1SnakeModel_a15c6f2df9dae34006db64aaad4c8d665} 
+Direction\+\_\+t {\bfseries \+\_\+direction}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_abd365d082c36419e662c4bcc0f06c257}\label{classbrick__game_1_1SnakeModel_abd365d082c36419e662c4bcc0f06c257} 
+std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point {\bfseries \+\_\+timer}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a7036f578e210f33c62c397f5d254d7ca}\label{classbrick__game_1_1SnakeModel_a7036f578e210f33c62c397f5d254d7ca} 
+std\+::chrono\+::steady\+\_\+clock\+::time\+\_\+point {\bfseries \+\_\+bstimer}
+\item 
+\Hypertarget{classbrick__game_1_1SnakeModel_a86f5d59149cd3cb58065f01c59d49dfe}\label{classbrick__game_1_1SnakeModel_a86f5d59149cd3cb58065f01c59d49dfe} 
+bool {\bfseries \+\_\+won}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the Snake game. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbrick__game_1_1SnakeModel_ae0a68f8c7df43d0a93a699591a7cd7d4}\label{classbrick__game_1_1SnakeModel_ae0a68f8c7df43d0a93a699591a7cd7d4} 
+\index{brick\_game::SnakeModel@{brick\_game::SnakeModel}!getState@{getState}}
+\index{getState@{getState}!brick\_game::SnakeModel@{brick\_game::SnakeModel}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily Game\+State\+\_\+t brick\+\_\+game\+::\+Snake\+Model\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the game state. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_af70dd37c4527e46f9933a9bafe443a79}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1SnakeModel_a2a1246ff2bc57297a115c744a80f6c52}\label{classbrick__game_1_1SnakeModel_a2a1246ff2bc57297a115c744a80f6c52} 
+\index{brick\_game::SnakeModel@{brick\_game::SnakeModel}!isWin@{isWin}}
+\index{isWin@{isWin}!brick\_game::SnakeModel@{brick\_game::SnakeModel}}
+\doxysubsubsection{\texorpdfstring{isWin()}{isWin()}}
+{\footnotesize\ttfamily bool brick\+\_\+game\+::\+Snake\+Model\+::is\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1SnakeModel_ab3b7170a706c6814f66953511bf0b859}\label{classbrick__game_1_1SnakeModel_ab3b7170a706c6814f66953511bf0b859} 
+\index{brick\_game::SnakeModel@{brick\_game::SnakeModel}!sigact@{sigact}}
+\index{sigact@{sigact}!brick\_game::SnakeModel@{brick\_game::SnakeModel}}
+\doxysubsubsection{\texorpdfstring{sigact()}{sigact()}}
+{\footnotesize\ttfamily void brick\+\_\+game\+::\+Snake\+Model\+::sigact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Function that should be called every tick of the game. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_ac7fc73f97a2c3980ed065e43fd81d2fc}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1SnakeModel_aa90a757e7d8ae96ae29c0606bc90bb57}\label{classbrick__game_1_1SnakeModel_aa90a757e7d8ae96ae29c0606bc90bb57} 
+\index{brick\_game::SnakeModel@{brick\_game::SnakeModel}!ticked@{ticked}}
+\index{ticked@{ticked}!brick\_game::SnakeModel@{brick\_game::SnakeModel}}
+\doxysubsubsection{\texorpdfstring{ticked()}{ticked()}}
+{\footnotesize\ttfamily bool brick\+\_\+game\+::\+Snake\+Model\+::ticked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns whether the game\textquotesingle{}s speed-\/dependent tick has passed. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_adf65c276ce264cb267266a6be9e80469}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1SnakeModel_a3c318fa65bcd3a54324a473d92e59f90}\label{classbrick__game_1_1SnakeModel_a3c318fa65bcd3a54324a473d92e59f90} 
+\index{brick\_game::SnakeModel@{brick\_game::SnakeModel}!updateCurrentState@{updateCurrentState}}
+\index{updateCurrentState@{updateCurrentState}!brick\_game::SnakeModel@{brick\_game::SnakeModel}}
+\doxysubsubsection{\texorpdfstring{updateCurrentState()}{updateCurrentState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{Game\+Info\+\_\+t}} brick\+\_\+game\+::\+Snake\+Model\+::update\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates and returns information needed to render the game. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_ac0f5c4f6d310ee86433aa382ec027900}{brick\+\_\+game\+::\+Model}}.
+
+\Hypertarget{classbrick__game_1_1SnakeModel_ae1dcdd7e3165d389e5bea3d1e6b184bc}\label{classbrick__game_1_1SnakeModel_ae1dcdd7e3165d389e5bea3d1e6b184bc} 
+\index{brick\_game::SnakeModel@{brick\_game::SnakeModel}!userInput@{userInput}}
+\index{userInput@{userInput}!brick\_game::SnakeModel@{brick\_game::SnakeModel}}
+\doxysubsubsection{\texorpdfstring{userInput()}{userInput()}}
+{\footnotesize\ttfamily void brick\+\_\+game\+::\+Snake\+Model\+::user\+Input (\begin{DoxyParamCaption}\item[{int}]{act }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accepts the player\textquotesingle{}s action. 
+
+
+
+Implements \mbox{\hyperlink{classbrick__game_1_1Model_ac52a7f6daac8ec3ec91075d230ea503e}{brick\+\_\+game\+::\+Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+brick\+\_\+game/snake/snake.\+h\item 
+brick\+\_\+game/snake/snake.\+cc\end{DoxyCompactItemize}

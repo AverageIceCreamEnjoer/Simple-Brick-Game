@@ -1,0 +1,61 @@
+\doxysection{api.\+h}
+\hypertarget{api_8h_source}{}\label{api_8h_source}\index{brick\_game/api/api.h@{brick\_game/api/api.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ \ \ \ \(\backslash\)file\ File\ that\ the\ interface\ accesses}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ \_API\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ \_API\_H\_}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ STATES\ 5}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }brick\_game\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ \ \ \ \(\backslash\)brief\ enum\ of\ user\ actions}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00011\ \ \ Start,}
+\DoxyCodeLine{00012\ \ \ Pause,}
+\DoxyCodeLine{00013\ \ \ Terminate,}
+\DoxyCodeLine{00014\ \ \ Left,}
+\DoxyCodeLine{00015\ \ \ Right,}
+\DoxyCodeLine{00016\ \ \ Up,}
+\DoxyCodeLine{00017\ \ \ Down,}
+\DoxyCodeLine{00018\ \ \ Action}
+\DoxyCodeLine{00019\ \}\ UserAction\_t;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ \ \(\backslash\)brief\ enum\ of\ block\ types}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{\ Empty,\ Head,\ Filled,\ Apple\ \}\ Block\_t;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ \ \ \ \(\backslash\)brief\ Struct\ that\ contains\ information\ about\ game\ for\ user\ interface}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{int}\ **field;}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{int}\ **next;}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{int}\ score;}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{int}\ high\_score;}
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{int}\ level;}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{int}\ speed;}
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{int}\ pause;}
+\DoxyCodeLine{00033\ \}\ \mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{GameInfo\_t}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{comment}{//\ \ \ \ \(\backslash\)brief\ enum\ of\ game\ states}}
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{\ START\ =\ 0,\ PAUSE,\ SPAWN,\ MOVING,\ GAMEOVER\ \}\ GameState\_t;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{comment}{//\ \(\backslash\)brief\ Parent\ class\ of\ game\ models}}
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classbrick__game_1_1Model}{Model}}\ \{}
+\DoxyCodeLine{00040\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \mbox{\hyperlink{classbrick__game_1_1Model}{Model}}()\ \{\}}
+\DoxyCodeLine{00042\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classbrick__game_1_1Model}{\string~Model}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structbrick__game_1_1GameInfo__t}{GameInfo\_t}}}
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{classbrick__game_1_1Model_ac0f5c4f6d310ee86433aa382ec027900}{updateCurrentState}}()\ =\ 0;\ \ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{classbrick__game_1_1Model_ac7fc73f97a2c3980ed065e43fd81d2fc}{sigact}}()\ =\ 0;\ \ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classbrick__game_1_1Model_ac52a7f6daac8ec3ec91075d230ea503e}{userInput}}(\textcolor{keywordtype}{int}\ act)\ =\ 0;\ \ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keyword}{virtual}\ GameState\_t\ \mbox{\hyperlink{classbrick__game_1_1Model_af70dd37c4527e46f9933a9bafe443a79}{getState}}()\ =\ 0;\ \ \ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}}
+\DoxyCodeLine{00052\ \ \ \mbox{\hyperlink{classbrick__game_1_1Model_adf65c276ce264cb267266a6be9e80469}{ticked}}()\ =\ 0;\ \ }
+\DoxyCodeLine{00053\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ isWin()\ =\ 0;}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ \}\ \ \textcolor{comment}{//\ namespace\ brick\_game}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
