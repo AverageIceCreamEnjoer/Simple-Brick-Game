@@ -1,0 +1,8 @@
+PROJECT_NAME = Simple_BrickGame
+PROJECT_NUMBER = 1
+PROJECT_BRIEF = "My education project with tetris and snake games"
+
+OUTPUT_DIRECTORY = doc/
+
+INPUT = brick_game/ gui/
+RECURSIVE = YES
